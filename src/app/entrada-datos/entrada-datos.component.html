@@ -1,0 +1,11 @@
+<h1>Entrada de datos con "input"</h1>
+
+<input
+  #entrada
+  (keyup)="actualizaPalabra(entrada.value)"
+  [value]="palabra"
+  type="text">
+
+<button (click)="limpiaTexto()">Reset</button>
+
+<h2>{{ palabra | uppercase }}</h2>
